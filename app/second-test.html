@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en" ng-app="myApp">
+<head>
+  <title>Finance meter</title>
+</head>
+
+  <body ng-controller="FinanceController">
+
+
+    <p>Your salary</p>
+    <input type="text" name="" id="" ng-model="salary"/>
+
+    <p>How much to invest in shopping?</p>
+    <input type="text" ng-model="percentage"/> %
+
+    <p>Amount to spend on gadgets is: </p>
+    <p>{{ result() | currency }}</p>
+
+
+    <script src="lib/angular/angular.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/controllers.js"></script>
+
+  </body>
+</html>
